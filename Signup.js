@@ -28,6 +28,7 @@ function Signup(props) {
         if (response.data.message) {
           alert(response.data.message);
         } else {
+          alert("Sign up successfully");
           setTitle(`Please back to login`);
         }
       });
@@ -67,7 +68,11 @@ function Signup(props) {
       <button type="submit" className="button-75">
         Sign up
       </button>
-      <button className="button-75" onClick={() => props.onSwitch("login")}>
+      <button
+        type="button"
+        className="button-75"
+        onClick={() => props.onSwitch("login")}
+      >
         back to login
       </button>
     </form>

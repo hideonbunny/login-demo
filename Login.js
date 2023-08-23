@@ -53,7 +53,11 @@ function Login(props) {
         Login
       </button>
 
-      <button className="button-75" onClick={() => props.onSwitch("signup")}>
+      <button
+        type="button"
+        className="button-75"
+        onClick={() => props.onSwitch("signup")}
+      >
         Don't have an account? Sign up here
       </button>
     </form>
